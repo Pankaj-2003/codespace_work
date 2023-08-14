@@ -1,167 +1,90 @@
 version: "3.1"
 nlu:
-
-###----------------INTENTS FOR FOLLOW UP QUESTIONS--------------------###
-
-
-- intent: greeting
+- intent: omdena_school_enrollment_inquiry
   examples: |
-    - Hi
-    - Hello
-    - Hey
+    - "How can I join OmdenaSchool?"
+    - "What are the steps to become a part of OmdenaSchool?"
+    - "Could you guide me on the process of joining OmdenaSchool?"
+    - "What is the procedure for enrolling in OmdenaSchool?"
+    - "How can I get involved with OmdenaSchool?"
+    - What is the Omdena School
+    - Can you tell me about Omdena School?
+    - Iwant to learn more about Omdena School
+    - How can I enroll in  at Omdena School?
+    - Tell me about Omdena School.
 
-- intent: bot_capabilities
+- intent: omdena_school_student_enrollment
   examples: |
-    - What can you do?
-    - What's your function?
-    - Tell me your capabilities.
+    - "How can I sign up as a student in Omdena School?"
+    - "What is the process for registering as a student at Omdena School?"
+    - "How can I enroll as a student in Omdena School?"
+    - "What steps do I need to follow to become a student at Omdena School?"
+    - "Could you provide instructions on how to sign up as a student in Omdena School?"
 
-- intent: project_help
+- intent: omdena_school_instructor_application_and_requirements
   examples: |
-    - Can you help me with a project?
-    - I need help with my project.
-    - Can you assist me on this project as a [developer](user_role)?
-    - I'm a [client](user_role) looking for assistance.
-    - I'm a [client](user_role) representing an organization
+    - "How can I sign up as a instructor in Omdena School?"
+    - "What steps should I take to become an instructor at Omdena School?"
+    - "Can you please explain the requirements and procedure for becoming an instructor at Omdena School?"
+    - "I'd like to know how I can become a teacher at Omdena School. Can you assist me with the sign-up procedure?"
 
-- intent: inform_role
+- intent: omdena_school_instructor_eligibility
   examples: |
-    - I'm a [developer](user_role)
-    - I'm a [client](user_role)
-    - [client](user_role)
-    - [developer](user_role)
-    - [client](user_role) work for an organization
+    - "What are the eligibility criteria for individuals interested in becoming instructors at Omdena School?"
+    - "Who meets the requirements to be considered as an instructor at Omdena School?"
+    - "What qualifications or prerequisites are necessary for someone to be eligible as an instructor at Omdena School?"
+    - "Are there any specific criteria that individuals must fulfill to qualify as instructors at Omdena School?"
+    - "Which individuals are deemed eligible to serve as instructors at Omdena School?"
 
-
-
-# NLU PANKAJ--LOCAL-CHAPTER
-- intent: join_chapter
+- intent: omdena_school_free_course_availability
   examples: |
-    - Join a [local chapter](local_chapter) now
-    - How to get involved in a [local chapters](local_chapter)?
-    - Participate in a [local chapter](local_chapter)
-    - What's the process to become a member of an [local chapters](local_chapter)?
-    - How can I get involved with [local chapters](local_chapter)?
-    - Tell me about joining a [local chapters](local_chapter)
-    - How to join [local chapter](local_chapter)
+    - "Can learners join courses free of cost?"
+    - "Is it possible for learners to enroll in courses without incurring any charges?"
+    - "Are there any courses available for learners that come at no cost?"
+    - "Are there free-of-charge options for learners who wish to join courses?"
+    - "Can learners participate in courses without having to pay any fees?"
+    - "Are there any courses that learners can join without any cost involved?"
 
-####---------NLU-ARPIT -lOCAL cHAPTER----------------######
-
-
-- intent: local_chapter_inquire_local_chapter_programs
+- intent: omdena_school_dual_role_teacher_and_student_inquiry
   examples: |
-    - What is [local chapter](local_chapter)?
-    - What are [local chapters](local_chapter)?
-    - Tell me about the [local chapter](local_chapter)
-    - What do the [local chapters](local_chapter) do?
-    - what is [local chapter](local_chapter)
-    - Can you explain the [local chapters](local_chapter)
-    - Tell me a bit about [local chapter](local_chapter)
-    - What does the [local chapters](local_chapter) involve?
-    - give me about [local chapter](local_chapter)?
+    - "Can I be a teacher and student as well?"
+    - "Is it possible for me to assume the roles of both a teacher and a student simultaneously?"
+    - "Can I take on the roles of both a teacher and a student concurrently?"
+    - "Is it permissible for me to be both a teacher and a student at the same time?"
+    - "Am I allowed to fulfill the positions of both a teacher and a student concurrently?"
+    - "Can I simultaneously engage in teaching and learning as a teacher and a student?"
 
-- intent: join_general
+- intent: omdena_school_access_to_recorded_sessions_inquiry
   examples: |
-    - How do I join?
-    - How to join?
-    - How can I join?
-    - What is the process of joining?
-    - I want to be a part of it. How do I start?
-    - What's the process to join?
-    - Can I join now?
-    - I am interested. How can I get involved?
-    - Please guide me on joining.
-    - How can I be part of this?
-    - I'd like to participate. What should I do next?
-    - Please help me understand the joining process.
-    - What are the steps to join?
+    - "Will we have access to the recorded sessions?"
+    - "Will we be provided with the recorded sessions for future reference?"
+    - "Can we expect to have access to the recorded sessions for later use?"
+    - "Is it possible for us to obtain the recorded sessions for our own review and access?"
+    - "Will there be a provision for us to retrieve the recorded sessions for our reference?"
+    - "Can we anticipate being able to revisit the recorded sessions at a later time?"
 
-- intent: eligibility_general
+- intent: omdena_school_overview_and_offerings
   examples: |
-    - Can anyone participate?
-    - What are the qualifications required to participate?
-    - Is participation open to everyone?
-    - Are there any restrictions on who can take part?
-    - What are the eligibility criteria for participating?
-    - Can individuals with any background join and participate?
-    - Do I need specific qualifications to be able to participate?
-    - What is the eligibility?
-    - Who can participate
-    - What are the requirements
+    - "What is Omdena School?"
+    - "Can you tell me about Omdena School and what it offers?"
+    - "What is the purpose of Omdena School and what can I expect from it?"
+    - "Could you provide me with an overview of Omdena School and its offerings?"
+    - "Can you give me a brief description of Omdena School and its educational programs?"
 
-- intent: cost_general
+- intent: omdena_school_unique_features_of_omdena_courses
   examples: |
-    - How much does it cost?
-    - Is there a fee to participate?
-    - What are the charges associated with it?
-    - Can I know the price?
-    - Are there any financial requirements?
-    - What's the pricing like?
-    - Do I have to pay to get involved?
-    - Are there any dues or fees?
-    - What would be the cost for me to join?
-    - Is this a paid opportunity?
-    - What is the cost
+    - "What sets Omdena courses apart from others?"
+    - "What makes Omdena's approach to courses distinctive?"
+    - "In what ways do Omdena courses stand out from the rest?"
+    - "How are Omdena courses different from traditional educational offerings?"
+    - "What unique features and benefits do Omdena courses provide?"
+    - "Why should someone choose Omdena courses over other options?"
 
-
-- intent: local_chapter_join_collaborator
+- intent: omdena_school_programs_value_proposition
   examples: |
-    - How can I join an Omdena local chapter?
-    - How can I be active on a local chapter?
-    - Can I become a member of a local chapter?
-    - What is the process for joining an Omdena local chapter?
-    - How do I become a member of an Omdena local chapter?
-    - Can you guide me on how to join a local Omdena chapter?
-    - What are the steps to become part of an Omdena local chapter?
-    - I'm interested in joining a local Omdena chapter. How can I do that?
+    - "What courses are coming up on Omdena School?"
+    - "Can you tell me about the upcoming courses on Omdena School?"
+    - "What are the next courses scheduled on Omdena School?"
+    - "Are there any new courses coming soon to Omdena School?"
+    - "Can you share information about the courses that will be available in the future on Omdena School?"
 
-- intent: local_chapter_collaborator_benefit
-  examples: |
-    - What are the benefits of joining an Omdena local chapter?
-    - What advantages can individuals gain from becoming members of an Omdena local chapter?
-    - How does joining an Omdena local chapter benefit individuals?
-    - What are the perks of being part of an Omdena local chapter?
-    - In what ways can individuals profit from participating in an Omdena local chapter?
-    - What do people stand to gain by becoming members of an Omdena local chapter?
-    - What are the benefits of being a local chapter collaborator?
-
-- intent: local_chapter_lead_local_chapter
-  examples: |
-    - Can I start my own Omdena local chapter?
-    - Can I lead a local chapter?
-    - Can I create a local chapter?
-    - Is it possible for me to initiate my own Omdena local chapter?
-    - How can I go about starting my own Omdena local chapter?
-    - Is there a way for me to create a local Omdena chapter?
-    - Can I take the initiative to establish an Omdena local chapter?
-    - What do I need to do to begin my own Omdena local chapter?
-
-- intent: local_chapter_lead_benefit
-  examples: |
-    - What are the benefits of becoming a local chapter lead?
-    - Why should I become a chapter lead?
-    - What advantages come with taking on the role of a local chapter lead?
-    - How does becoming a local chapter lead benefits ?
-    - In what ways can individuals gain from stepping up as a local chapter lead?
-    - What are the perks of assuming the position of a chapter lead?
-
-- intent: local_chapter_find_challenges
-  examples: |
-    - Where can I find challenges related to local chapter lead?
-    - How can I take the role of a local chapter lead?
-
-- intent: local_chapter_contact_organizers
-  examples: |
-    - How can I contact the organizers of an Omdena local chapter?
-    - Where can I find information on the local chapter organizers?
-    - How do I get in touch with the organizers of an Omdena local chapter?
-    - What is the best way to contact the organizers of a local Omdena chapter?
-    - Where can I find the contact details of the organizers for a specific Omdena local chapter?
-    - Is there a designated platform to reach out to the organizers of Omdena local chapters?
-    - How can I connect with the individuals responsible for organizing a local Omdena chapter?
-
-synonym: local_chapter
-  - local chapter
-  - local chapters
-  - Local Chapter
-  - Local Chapters
