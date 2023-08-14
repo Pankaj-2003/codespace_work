@@ -1,88 +1,52 @@
 version: "3.1"
 stories:
-
-- story: greeting path
+- story: omdena school enrollment inquiry
   steps:
-  - intent: greeting
-  - action: utter_greeting
-  # Resets current slot values on greeting
-  - action: action_reset_slots
+  - intent: omdena_school_enrollment_inquiry 
+  - action: utter_omdena_school_enrollment_inquiry
 
-- story: bot capabilities path
+- story: omdena school student enrollment
   steps:
-  - intent: bot_capabilities
-  - action: utter_bot_capabilities
+  - intent: omdena_school_student_enrollment 
+  - action: utter_omdena_school_student_enrollment
 
-- story: project help without role (developer response)
+- story: omdena school instructor application and requirements
   steps:
-  - intent: project_help
-  - action: action_general_help
-  - intent: inform_role
-    entities:
-      - user_role: "developer"
-  - slot_was_set:
-    - user_role: "developer"
-  - action: action_help_with_role
+  - intent: omdena_school_instructor_application_and_requirements 
+  - action: utter_omdena_school_instructor_application_and_requirements
 
-- story: project help without role (client response)
+- story: omdena school instructor eligibility
   steps:
-  - intent: project_help
-  - action: action_general_help
-  - intent: inform_role
-    entities:
-      - user_role: "client"
-  - slot_was_set:
-    - user_role: "client"
-  - action: action_help_with_role
+  - intent: omdena_school_instructor_eligibility 
+  - action: utter_omdena_school_instructor_eligibility
 
-- story: project help with role developer
+- story: omdena school free course availability
   steps:
-  - intent: project_help
-    entities:
-      - user_role: "developer"
-  - slot_was_set:
-    - user_role: "developer"
-  - action: action_help_with_role
+  - intent: omdena_school_free_course_availability 
+  - action: utter_omdena_school_free_course_availability
 
-- story: project help with role client
+- story: omdena school dual role teacher and student inquiry
   steps:
-  - intent: project_help
-    entities:
-      - user_role: "client"
-  - slot_was_set:
-    - user_role: "client"
-  - action: action_help_with_role
+  - intent: omdena_school_dual_role_teacher_and_student_inquiry 
+  - action: utter_omdena_school_dual_role_teacher_and_student_inquiry
 
-##------- Local Chapter -----------##
-
-- story: User wants to join a local chapter
+- story: omdena school access to recorded sessions inquiry
   steps:
-  - intent: join_chapter
-  - slot_was_set:
-    - local_chapter: "local chapter"
-  - action: utter_join_chapter
+  - intent: omdena_school_access_to_recorded_sessions_inquiry 
+  - action: utter_omdena_school_access_to_recorded_sessions_inquiry
 
-- story: Inquiry about local chapter
+- story: omdena school overview and offerings
   steps:
-  - intent: local_chapter_inquire_local_chapter_programs
-  - slot_was_set:
-    - local_chapter: "local chapter"
-  - action: utter_local_chapter_inquire_local_chapter_programs
-  
-##-------General-Classified using Entities----------##
+  - intent: omdena_school_overview_and_offerings 
+  - action: utter_omdena_school_overview_and_offerings
 
-- story: General request for joining
+- story: omdena school unique features of omdena courses
   steps:
-  - intent: join_general
-  - action: action_join_classify
+  - intent: omdena_school_unique_features_of_omdena_courses 
+  - action: utter_omdena_school_unique_features_of_omdena_courses
 
-- story: General request for eligibility
+- story: omdena school programs value proposition
   steps:
-  - intent: eligibility_general
-  - action: action_eligibility_classify
-
-- story: General request for cost
-  steps:
-  - intent: cost_general
-  - action: action_cost_classify
+  - intent: omdena_school_programs_value_proposition 
+  - action: utter_omdena_school_programs_value_proposition
 
